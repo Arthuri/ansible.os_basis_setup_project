@@ -22,4 +22,4 @@ Standalone Host Configuration with Ansible (CentOS7)
     * ```ansible-playbook install_1_os.yml```
   * Remove ansible if not needed anymore
     * ```cd /etc/ansible/projects/ansible.os_basis_setup_project/```
-    * ```ansible-playbook install_9_remove_ansible.sh```
+    * ```bash install_9_remove_ansible.sh```
