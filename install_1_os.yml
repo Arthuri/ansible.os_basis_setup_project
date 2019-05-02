@@ -1,0 +1,31 @@
+#!/usr/bin/ansible-playbook 
+---
+- name: basis setup
+  hosts: localhost
+  vars:
+    os_update: true
+    package_cleanup: true
+    package_upgrade: all
+    epel_repo: true
+
+    setup_mail: false
+    sysadmin_email: 'support@domain.ch'
+    mail_relay_host: 'mail.domain.ch'
+    external_mail_domain: 'domain.ch'
+
+    setup_syslog_forwarding: false
+    syslog_remote_host: '@syslog.domain.local:514'
+
+    setup_snmpd: false
+    monitoring_host_ip: '192.168.1.10'
+    snmp_community_name: 'MyCommunity'
+
+    setup_selinux: true
+    selinux_policy: disabled
+
+    setup_firewalld: true
+
+  roles:
+    - uniqconsulting.os_basic
+    - uniqconsulting.open_vm_tools
+...
