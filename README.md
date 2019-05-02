@@ -11,4 +11,4 @@ Standalone Host Configuration with Ansible (CentOS7)
     * / -> 10GB with <xfs|ext4> or larger (2nd partition)
 
 * login via SSH as root
-  
+  * ```wget -O - https://raw.githubusercontent.com/uniQconsulting-ag/ansible.os_basis_setup_project/master/install_0_prep_ansible.sh | sh ```
