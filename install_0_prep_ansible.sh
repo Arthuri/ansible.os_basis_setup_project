@@ -10,5 +10,6 @@ rpm -q ansible >/dev/null 2>&1 || yum -y install ansible
 mkdir $PDIR
 cd $PDIR
 test -d roles && rm -rf roles
-git clone 
+git clone https://github.com/uniQconsulting-ag/ansible.os_basis_setup_project.git
+cd cd $PDIR/ansible.os_basis_setup_project
 ansible-galaxy install uniqconsulting.open_vm_tools uniQconsulting.os_basic
