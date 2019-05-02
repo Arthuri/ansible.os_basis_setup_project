@@ -13,3 +13,4 @@ git clone https://github.com/uniQconsulting-ag/ansible.os_basis_setup_project.gi
 cd $PDIR/ansible.os_basis_setup_project
 test -d roles && rm -rf roles
 ansible-galaxy install uniqconsulting.open_vm_tools uniQconsulting.os_basic
+echo done

@@ -1,6 +1,7 @@
 # ansible.os_basis_setup_project
 Standalone Host Configuration with Ansible (CentOS7)
-## Prepare for setup
+
+## Setup host and do basic configuration
 * Install CentOS7
   * minimal software install
   * do not create first user
@@ -11,4 +12,14 @@ Standalone Host Configuration with Ansible (CentOS7)
     * / -> 10GB with <xfs|ext4> or larger (2nd partition)
 
 * login via SSH as root
-  * ```wget -O - https://raw.githubusercontent.com/uniQconsulting-ag/ansible.os_basis_setup_project/master/install_0_prep_ansible.sh | sh ```
+  * Setup ansible and project
+    * ```wget -O - https://raw.githubusercontent.com/uniQconsulting-ag/ansible.os_basis_setup_project/master/install_0_prep_ansible.sh | sh ```
+  * Define vars according your needs
+    * ```cd /etc/ansible/projects/ansible.os_basis_setup_project/```
+    * ```vim install_1_os.yml```
+  * Run the playbook
+    * ```cd /etc/ansible/projects/ansible.os_basis_setup_project/```
+    * ```ansible-playbook install_1_os.yml```
+  * Remove ansible if not needed anymore
+    * ```cd /etc/ansible/projects/ansible.os_basis_setup_project/```
+    * ```ansible-playbook install_9_remove_ansible.sh```
