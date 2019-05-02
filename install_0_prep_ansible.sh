@@ -4,7 +4,7 @@
 # WHO: Chris Ruettimann cruettimann@uniqconsulting.ch
 
 set -e
-PDIR=/etc/ansible/projects-dev
+PDIR=/etc/ansible/projects
 rpm -q epel-release >/dev/null 2>&1 || yum -y install epel-release
 rpm -q ansible >/dev/null 2>&1 || yum -y install ansible git
 mkdir $PDIR
