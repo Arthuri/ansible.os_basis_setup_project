@@ -9,7 +9,7 @@ Standalone Host Configuration with Ansible (CentOS7)
   * Network Settings as needed
   * Partition
     * swap -> 2GB or larger (1st partition)
-    * / -> 10GB with <xfs|ext4> or larger (2nd partition)
+    * / -> 20GB with <xfs|ext4> or larger (2nd partition)
 
 * login via SSH as root
   * Setup ansible and project
