@@ -6,6 +6,7 @@
 set -e
 PDIR=/etc/ansible/projects
 rpm -q epel-release >/dev/null 2>&1 || yum -y install epel-release
+rpm -q git >/dev/null 2>&1 || yum -y install ansible git
 rpm -q ansible >/dev/null 2>&1 || yum -y install ansible git
 mkdir $PDIR
 cd $PDIR
