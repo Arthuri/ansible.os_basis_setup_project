@@ -11,7 +11,7 @@
     setup_mail: false
     sysadmin_email: 'support@domain.ch'
     mail_relay_host: 'mail.domain.ch'
-    external_mail_domain: 'domain.ch'
+    mail_local_sender_domain: 'domain.ch'
 
     setup_syslog_forwarding: false
     syslog_remote_host: '@syslog.domain.local:514'
