@@ -18,6 +18,7 @@ sed -i 's|^#log_path.*|log_path = /var/log/ansible.log|g' $ansibleconfigfile
 sed -i 's|^#nocows.*|nocows = 1|g' $ansibleconfigfile
 
 mkdir $PDIR || true
+chmod 700 $PDIR
 cd $PDIR
 git clone https://github.com/uniQconsulting-ag/ansible.os_basis_setup_project.git
 cd $PDIR/ansible.os_basis_setup_project
