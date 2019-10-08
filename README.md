@@ -14,6 +14,7 @@ Standalone Host Configuration with Ansible (CentOS7)
 * login via SSH as root
   * Setup ansible and project
     * ```wget -O - https://raw.githubusercontent.com/uniQconsulting-ag/ansible.os_basis_setup_project/master/install_0_prep_ansible.sh | sh ```
+    * ``` curl https://raw.githubusercontent.com/uniQconsulting-ag/ansible.os_basis_setup_project/master/install_0_prep_ansible.sh | sh ```
   * Define vars according your needs
     * ```cd /etc/ansible/projects/ansible.os_basis_setup_project/```
     * ```vim install_1_os.yml```
